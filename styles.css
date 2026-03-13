@@ -14,6 +14,7 @@ header{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .liste{
@@ -33,4 +34,10 @@ background:#2f80ed;
 color:white;
 padding:8px 15px;
 border-radius:5px;
+}
+
+.logo img{
+    height: 50px;
+    width: 10àpx;
+    margin-left:10px ;
 }
