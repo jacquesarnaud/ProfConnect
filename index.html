@@ -4,31 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="Image/logo (1).png">
     <title>Profconnect</title>
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="Image/logo.jpg" alt=""></a>
+        <a class="logo" href="index.html"><img src="Image/logo.png" alt=""></a>
         <nav class="navbar">
             <ul class="liste">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="">Nos professeur</a></li>
-                <li><a href="">Devenir professeur</a></li>
-                <li ><a href="">Contact</a></li>
-                <button class="btn">
+                <li><a href="Pages/Nos-prof.html">Nos professeur</a></li>
+                <li><a href="Pages/Devenir_prof.html">Devenir professeur</a></li>
+                <li ><a href="#footcontact">Contact</a></li>
+                <button class="btn btn-1">
                     <a href="">Se connecter</a>
                 </button>
             </ul>
         </nav>
     </header>
-    <div class="cover" style="border: 1px solid black; height: 500px; display: flex; justify-content: space-between; align-items:center;margin: 10px 10px; background-color: beige;">
-        <div class="text-cover" style="border: 1px solid black;height: 300px;">
-            <h1>Les professeurs connectés aux élèves</h1>
-            <p>Un professeur connecté, une solution trouvée.</p>
+    <div class="cover">
+        <div class="text-cover">
+            <h1>Trouver le meilleur professeur pour vos cours de renforcement.</h1>
+            <p>une plateforme qui connectes les elèves avec des professeurs qualifiés pour des cours de renforcement en ligne.</p>
+             <div class="buttons-cover">
+                <button class="btn-rest btn-reste">
+                    <a href="/Pages/Nos-prof.html">Trouver un professeur</a>
+                </button>
+                <button class="btn-profs btn-prof">
+                    <a href="/Pages/Devenir_prof.html">Donner des cours</a>
+                </button>
+            </div>
         </div>
-        <div class="image-cover">
-            <img style="overflow: hidden;height: 497px;width: 100%;" src="Image/image devenir prof.jpg" alt="">
-        </div>
+        <img src="Image/online.jpg" alt="">
+        
     </div>
+    <main>
+        <section class="sect-1">
+            <div id="titre">
+                <h1>Comment ca marche</h1>
+            </div>
+            <div class="ca-marche">
+                <div class="marche">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h4>1. Choisir une matiere</h4>
+                    <p>Maths, Physique, Anglais, etc</p>
+                </div>
+                <div class="marche">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>2. Choisir un professeur</h4>
+                    <p>consulter les profils des enseignants</p>
+                </div> 
+                <div class="marche">
+                    <i class="fa-solid fa-video"></i>
+                    <h4>3. suivre le cours en ligne</h4>
+                    <p>Cours via zoom, Google meet</p>
+                </div> 
+            </div>
+        </section>
+        <section class="sect-2">
+            <div id="titre">
+                <h1>Professeurs populaires </h1>
+            </div>
+            <div class="populaire">
+                <div class="card">
+                    <img src="Image/" alt="Description de l'image">
+                    <div class="descrit"><h3>senerity shores</h3><h3>$7,000</h3></div>
+                    <div class="location">sydney,australia</div>
+                    <div class="stars" style="right: 990px;"><span id="etoile">★</span><span id="chif">4.8</span></div>
+                    <div class="buttons">
+                        <button class="btn-vertes btn-verte">
+                            <a href="/Pages/voir_plus.html">Voir plus</a>
+                        </button>
+                        <button class="btn-blues btn-blue">
+                            <a href="/Pages/reservation.html">Reserver</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src=""alt="Deimage/Rectangle 6 (3).png" alt="Description de l'image" >
+                    <div class="descrit"><h3>azure haven</h3><h3>$8,000</h3></div>
+                    <div class="location">barcelona, spain</div>
+                    <div class="stars" style="right: 682px;"><span id="etoile">★</span><span id="chif">4.8</span></div>
+                    <div class="buttons">
+                        <button class="btn-vertes btn-verte">
+                            <a href="/Pages/voir_plus.html">Voir plus</a>
+                        </button>
+                        <button class="btn-blues btn-blue">
+                            <a href="/Pages/reservation.html">Reserver</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="Description de l'image">
+                    <div class="descrit"><h3>ocean breeze</h3><h3>$7,000</h3></div>
+                    <div class="location">bali, indonesia</div>
+                    <div class="stars" style="right: 376.4px;"><span id="etoile">★</span><span id="chif">4.8</span></div>
+                    <div class="buttons">
+                        <button class="btn-vertes btn-verte">
+                            <a href="/Pages/voir_plus.html">Voir plus</a>
+                        </button>
+                        <button class="btn-blues btn-blue">
+                            <a href="/Pages/reservation.html">Reserver</a>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="sect-3">
+            <div id="titre">
+                <h1>pourquoi utiliser la plateforme</h1>
+            </div>
+            <div class="ca-marche">
+                <div class="marche">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h4>Choisir son professeur</h4>
+                </div>
+                <div class="marche">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h4>cours en ligne depuis sa maison</h4>
+                </div> 
+                <div class="marche">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h4>Ameliorer ses resultats scolaires</h4>
+                </div> 
+                <div class="marche">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h4>professeurs qualifiés</h4>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer id="footcontact">
+        <section class="sect-4">
+            <div class="foot">
+                <div class="propos">
+                    <h3 style="color: white;">ProfConnect</h3>
+                    <p style="color: white;">une plateforme qui connectes les elèves <br> avec des professeurs qualifiés pour des <br> cours de renforcement en ligne.</p>
+                </div>
+                <div class="contact">
+                    <h3 style="color: white;">contact</h3>
+                    <ul class="list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="">Nos professeur</a></li>
+                        <li><a href="">Devenir professeur</a></li>
+                        <li ><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social" >
+                    <h3 style="color: white;">Resequ sociaux</h3>
+                    <ul class="list-li">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copy">
+                <img src="Image/logo.png" alt="" class="vector">
+                <p class="copyright" style="color: white;">© 2024 Travelworld. All rights reserved.</p>
+            </div>
+        </section>
+        
+    </footer>
+      
 </body>
 </html>

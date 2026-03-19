@@ -8,6 +8,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F2F2;
 }
 
 header{
@@ -20,13 +21,20 @@ header{
 .liste{
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     margin-right: 10px;
 }
 
 .liste a{
 text-decoration:none;
 color:black;
+}
+
+
+.logo img{
+    height: 50px;
+    width: 170px;
+    margin-left:10px ;
 }
 
 .btn{
@@ -36,8 +44,216 @@ padding:8px 15px;
 border-radius:5px;
 }
 
-.logo img{
+.btn-1:hover{
+    background-color: #b5c4d8;
+}
+
+
+.cover{
+    overflow: hidden;
+    border: 1px solid black; 
+    height: 500px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items:center;
+    margin: 10px 10px; 
+    background-color: #B1C7D4;
+}
+
+.text-cover{
+    border: 1px solid black;
+    height: 300px;
+    margin-left:15px ;
+    width: max-content;
+}
+
+.text-cover h1{
+    font-size: 35px;
+}
+
+.buttons-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.btn-profs a{
+    text-decoration: none;
+    color: #24CB27;
+    font-size: 20px;
+    font-weight:700;
+    
+}
+.btn-rest a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight:700;
+}
+
+.btn-profs{
+    display: block;
+    background:#fbfffb;
+    color:#24CB27;
+    padding:8px 15px;
+    border-radius:5px;
+    border-color: #24CB27;
+    margin : 10px 10px ;
+
+}
+
+.btn-prof:hover{
+    background-color: #24cb279c;
+}
+
+.btn-rest{
+    background:#2f80ed;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+    margin : 0px 10px ;
+    border-color: black;
+}
+.btn-reste:hover{
+    background-color:#B1C7D4;
+}
+
+.cover img{
+    height: 200 px;
+    width: 50%;
+    margin: 20px 20px 20px 0px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+main{
+    display: block;
+}
+
+#titre{
+    margin-bottom:20px ;
+    display: flex;
+    justify-content: center;
+
+}
+
+#titre h1{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.ca-marche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.marche h4{
+    margin: 10px;
+    font-size: 20px
+}
+
+
+.marche i{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+.populaire{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top:35px;
+}
+
+.buttons{
+    display: inline;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.btn-vertes a{
+    text-decoration: none;
+    color: #24CB27;
+    
+}
+.btn-blues a{
+    text-decoration: none;
+}
+
+.btn-vertes{
+    display: block;
+    background:#fbfffb;
+    color:#24CB27;
+    padding:8px 15px;
+    border-radius:5px;
+    margin : 10px 10px ;
+
+}
+
+.btn-blues{
+    background:#2f80ed;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+    margin : 0px 10px ;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    margin-top:30px ;
+    align-items: center;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.foot a{
+    color: white;
+}
+
+.contact ul li a{
+    text-decoration: none;
+}
+.contact{
+    margin-top: 20px;
+}
+.social{
+    margin: 0px;
+}
+
+.list-li{
+    display:flex;
+    gap: 20px;
+}
+
+.list, .list-li , .propos p{
+    margin-top: 10px;
+    
+}
+.copy{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.copy img{
     height: 50px;
-    width: 10àpx;
+    width: 170px;
     margin-left:10px ;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
