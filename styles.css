@@ -106,6 +106,9 @@ border-radius:5px;
 .btn-prof:hover{
     background-color: #24cb279c;
 }
+.btn-prof a:hover{
+    color: white;
+}
 
 .btn-rest{
     background:#2f80ed;
@@ -118,6 +121,10 @@ border-radius:5px;
 .btn-reste:hover{
     background-color:#B1C7D4;
 }
+.btn-reste a:hover{
+    color:black;
+}
+
 
 .cover img{
     height: 200 px;
@@ -162,23 +169,67 @@ main{
     margin-bottom: 20px;
 }
 
+.sect2{
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
 
 .populaire{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 70px;
     margin-top:35px;
+}
+.card{
+    display: inline;
+    border: 1px solid black;
+    border-radius:30px ;
+    align-items: center;
+    text-align: center;
+    height: 380px;
+    width: 270px;
+    overflow: hidden;
+    
+}
+.card img{
+    overflow: hidden; 
+    height: 200px; 
+    width:100%;
+}
+#bouton{
+    margin-top:50px ;
+    display: flex;
+    justify-content: center; 
+}
+
+.btn-cent a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    color:#24CB27;
+}
+.btn-cent{
+    background-color: white;
+    border-color: #24CB27;
+    border-radius: 30px;
+    width: 300px;
+    height: 40px;
+}
+
+.btn-cents:hover{
+    background-color: #0e9249;
+}
+.btn-cents a:hover{
+    color: white;
 }
 
 .buttons{
-    display: inline;
-    justify-content: space-evenly;
+    display: inline-block;
     gap: 10px;
     align-items: center;
     text-align: center;
-    
-
 }
 .btn-vertes a{
     text-decoration: none;
@@ -196,15 +247,26 @@ main{
     padding:8px 15px;
     border-radius:5px;
     margin : 10px 10px ;
-
+    border-color: #24CB27;
+}
+.btn-verte:hover{
+    background-color: #0e9249;
+}
+.btn-verte a:hover{
+    color: white;
 }
 
 .btn-blues{
     background:#2f80ed;
-    color:white;
     padding:8px 15px;
     border-radius:5px;
     margin : 0px 10px ;
+}
+.btn-blue:hover{
+    background-color: #B1C7D4;
+}
+.btn-blue a:hover{
+    color: black;
 }
 
 
