@@ -25,6 +25,7 @@ header{
     margin-right: 10px;
 }
 
+
 .liste a{
 text-decoration:none;
 color:black;
@@ -188,14 +189,15 @@ main{
     border-radius:30px ;
     align-items: center;
     text-align: center;
-    height: 380px;
+    height: 430px;
     width: 270px;
     overflow: hidden;
     
-}
+}   
 .card img{
     overflow: hidden; 
     height: 200px; 
+    object-fit: cover;
     width:100%;
 }
 #bouton{
@@ -329,7 +331,7 @@ footer{
 
 .gauche , .droit {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
 }
 
 .gauche h1{
@@ -366,15 +368,14 @@ textarea{
     padding: 10px;
     border-radius: 10px
 }
-
-@media (max-width: 768px){
-    .container{
-        flex-direction: column;
-    }
+.hamburger{
+    display: none;
 }
+
 
 /* Tablettes */
 @media (max-width: 992px) {
+
 
     .cover {
         flex-direction: column;
@@ -412,13 +413,35 @@ textarea{
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
+        display: flex;
+        align-items: center;
         gap: 10px;
     }
+
+    .hamburger{
+        margin-right: 40px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .hamburger { display: none; }
+    .nav-links { display: flex; }
 
     .liste {
         flex-direction: column;
         gap: 15px;
+        display: none;
+    }
+
+    #menu-toggler:checked ~ .liste {
+        display: inline;
+    }
+
+    .hamburger {
+        display: block;
+         cursor: pointer;
     }
 
     .cover {
@@ -432,6 +455,12 @@ textarea{
     .buttons-cover {
         flex-direction: column;
         gap: 10px;
+    }
+
+    #titre{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 1000;
     }
 
     .populaire {
