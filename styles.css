@@ -335,7 +335,8 @@ footer{
 }
 
 .gauche h1{
-    font-size: 26px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .feature{
     display: flex;
@@ -363,6 +364,10 @@ textarea{
     height:80px;
 
 }
+.droit h2{
+    margin-bottom: 20px;
+}
+
 .droit button{
     margin-top: 15px;
     padding: 10px;
@@ -458,6 +463,66 @@ main h2 {
 }
 
 
+/* connection et inscription */
+.connect,.inscrire{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} 
+
+.connection,.Inscription {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    height: max-content;
+    text-align: center;
+}
+
+.connection,.Inscription p{
+    margin-top: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assure le padding correct */
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.form p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
 /* Tablettes */
 @media (max-width: 889px) {
 
@@ -525,7 +590,7 @@ main h2 {
     }
 
     #menu-toggler:checked ~ .liste {
-        display: inline;
+        display: block;
     }
 
     .hamburger {
