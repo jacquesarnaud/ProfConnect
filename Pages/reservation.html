@@ -12,6 +12,8 @@
   <header>
         <a class="logo" href="../index.html"><img src="../Image/logo.png" alt=""></a>
         <nav class="navbar">
+            <input type="checkbox" id="menu-toggler" style="display: none;">
+            <label for="menu-toggler" class="hamburger">☰</label>
             <ul class="liste">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="Nos-prof.html">Nos professeur</a></li>
@@ -24,11 +26,56 @@
         </nav>
     </header>
     <main>
-        <!-- formulaire de reservation -->
-         <form action="">
-            
-         </form>
-       
+        <h2>Formulaire de reservation</h2>
+        <div class="container_reserve">
+            <div class="gauche2">
+                <img src="../Image/reservation.jpg" alt="">
+            </div>
+
+            <div class="droit2">
+                
+                <form>
+                    <div class="prof_select">
+                        <h4>professeur selectionne</h4>
+                        <p>Mr. Koffi Charle<br> <span id="maths">Mathematiques, Physique-Chimie</span> <br> <span id="prix">2000 FCFA / heure</span></p>
+                    </div>
+                    <label for="nom">Nom de l'élève*</label>
+                    <input id="nom" type="text" placeholder="Nom complet" required>
+                    <label for="classe">Classe*</label>
+                    <select id="classe" required>
+                        <option value="">-- Sélectionne ta classe --</option>
+                        <option value="6eme">6ème</option>
+                        <option value="5eme">5ème</option>
+                        <option value="4eme">4ème</option>
+                        <option value="3eme">3ème</option>
+                        <option value="2nde">2nde</option>
+                        <option value="1ere">1ère</option>
+                        <option value="terminale">Terminale</option>
+                    </select>
+
+                    <label for="matiere">Matière*</label>
+                    <select id="matiere" required>
+                        <option value="">-- Sélectionne ta matière --</option>
+                        <option value="maths">Mathématiques</option>
+                        <option value="physique">Physique-Chimie</option>
+                        <option value="svt">SVT</option>
+                        <option value="francais">Français</option>
+                        <option value="anglais">Anglais</option>
+                        <option value="histoire">Histoire-Géographie</option>
+                        <option value="philo">Philosophie</option>
+                    </select>
+
+                    <label for="attentes">Tes attentes*</label>
+                    <textarea placeholder="Tes attentes par rapport aux cours" required></textarea>
+                    <label for="telephone">Téléphone*</label>
+                    <input id="telephone" type="tel" placeholder="+225 0700000000" required>
+                    <label for="email">Email*</label>
+                    <input id="email" type="email" placeholder="email@example.com" required>
+
+                    <button type="submit">Je réserve mon cours</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="sect-4">
