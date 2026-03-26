@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/png" href="Image/logo (1).png">
     <title>Profconnect</title>
@@ -12,13 +12,15 @@
     <header>
         <a class="logo" href="../index.html"><img src="../Image/logo.png" alt=""></a>
         <nav class="navbar">
+            <input type="checkbox" id="menu-toggler" style="display: none;">
+            <label for="menu-toggler" class="hamburger">☰</label>
             <ul class="liste">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="Nos-prof.html">Nos professeur</a></li>
                 <li><a href="Devenir_prof.html">Devenir professeur</a></li>
                 <li ><a href="#footcontact">Contact</a></li>
                 <button class="btn btn-1">
-                    <a href="">Se connecter</a>
+                    <a href="connection.html">Se connecter</a>
                 </button>
             </ul>
         </nav>
@@ -56,14 +58,17 @@
             <div class="droit">
                 <h2>Formulaire de candidature</h2>
                 <form>
+                    <label for="nom">Nom complet*</label>
                     <input type="text" placeholder="Nom complet" required>
-
+                    <label for="nom">Matières enseignées*</label>
                     <input type="text" placeholder="Matières enseignées" required>
-                    <input type="text" placeholder="Diplôme" required>
-
-                    <textarea placeholder="Expérience" required></textarea>
-
+                    <label for="nom">Diplôme*</label>
+                    <input type="text" placeholder="votre plus haut diplôme" required>
+                    <label for="nom">Expérience*</label>
+                    <textarea placeholder="votre expérience" required></textarea>
+                    <label for="nom">telephone*</label>
                     <input type="tel" placeholder="+225 0700000000" required>
+                    <label for="nom">Email*</label>
                     <input type="email" placeholder="email@example.com" required>
                     <button type="submit">Postuler maintenant</button>
                 </form>

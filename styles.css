@@ -335,7 +335,8 @@ footer{
 }
 
 .gauche h1{
-    font-size: 26px;
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .feature{
     display: flex;
@@ -363,6 +364,10 @@ textarea{
     height:80px;
 
 }
+.droit h2{
+    margin-bottom: 20px;
+}
+
 .droit button{
     margin-top: 15px;
     padding: 10px;
@@ -373,8 +378,153 @@ textarea{
 }
 
 
+/* RESERVATION */
+
+
+.container_reserve{
+    display: flex;
+    min-height: 100vh;
+}
+
+.gauche2 , .droit2 {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.gauche2 img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+/* droite2 */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.prof_select{
+    background-color:#aac1ce ;
+    border-radius: 10px;
+    height: auto;
+    width: 95%;
+    margin: 20px 10px 30px 10px;
+    padding: 10px;
+}
+
+.prof_select p{
+    font-size: 10px;
+    margin: 10px;
+}
+
+#maths{
+    color: #2f80ed;
+    margin-bottom: 15px;
+}
+
+#prix{
+    color: #18ce1b;
+    margin-bottom: 15px;
+}
+
+input, textarea,select{
+    margin: 10px 0;
+    padding:10px;
+    border-radius: 8px;
+    border: 1px solid ;
+    background-color: white;
+}
+label{
+    font-size: 15px;
+    font-weight: 800    ;
+}
+
+textarea{
+    height:80px;
+
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #2f80ed;
+}
+.droit2 button{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #2f80ed;
+}
+
+
+/* connection et inscription */
+.connect,.inscrire{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} 
+
+.connection,.Inscription {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    height: max-content;
+    text-align: center;
+}
+
+.connection,.Inscription p{
+    margin-top: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assure le padding correct */
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.form p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
 /* Tablettes */
-@media (max-width: 992px) {
+@media (max-width: 889px) {
 
 
     .cover {
@@ -426,6 +576,10 @@ textarea{
         flex-direction: column;
     }
 
+    .container_reserve{
+        flex-direction: column;
+    }
+
     .hamburger { display: none; }
     .nav-links { display: flex; }
 
@@ -436,7 +590,7 @@ textarea{
     }
 
     #menu-toggler:checked ~ .liste {
-        display: inline;
+        display: block;
     }
 
     .hamburger {
