@@ -12,6 +12,8 @@
    <header>
         <a class="logo" href="../index.html"><img src="../Image/logo.png" alt=""></a>
         <nav class="navbar">
+            <input type="checkbox" id="menu-toggler" style="display: none;">
+            <label for="menu-toggler" class="hamburger">☰</label>
             <ul class="liste">
                 <li><a href="../index.html">Accueil</a></li>
                 <li><a href="Nos-prof.html">Nos professeur</a></li>
@@ -25,10 +27,33 @@
     </header>
     <main>
         <section class="sect-2">
-            <div id="titre">
-                <h1>Professeurs populaires </h1>
+            <div class="full">
+                <h2>Nos Professeurs </h2>
+                <select id="classe" required>
+                    <option value="">-- Sélectionne ta classe --</option>
+                    <option value="6eme">6ème</option>
+                    <option value="5eme">5ème</option>
+                    <option value="4eme">4ème</option>
+                    <option value="3eme">3ème</option>
+                    <option value="2nde">2nde</option>
+                    <option value="1ere">1ère</option>                        <option value="terminale">Terminale</option>
+                </select>
+                <select id="matiere" required>
+                    <option value="">-- Sélectionne ta matière --</option>
+                    <option value="maths">Mathématiques</option>
+                    <option value="physique">Physique-Chimie</option>
+                    <option value="svt">SVT</option>                        <option value="francais">Français</option>
+                    <option value="anglais">Anglais</option>
+                    <option value="histoire">Histoire-Géographie</option>
+                    <option value="philo">Philosophie</option>
+                </select>
+                 <button class="btn-blues btn-blue">
+                    <a href="">Recherche</a>
+                </button>
             </div>
+            
             <div class="populaire">
+                
                 <div class="card">
                     <img src="../Image/profanglais.jpg" alt="Description de l'image">
                     <div class="descrit"><h3>M. Koffi Charle</h3></div>
@@ -81,7 +106,7 @@
         <section class="sect-1">
             <div class="populaire">
                 <div class="card">
-                    <img src="Image/profanglais.jpg" alt="Description de l'image">
+                    <img src="../Image/phi.jpg" alt="Description de l'image">
                     <div class="descrit"><h3>M. Koffi Charle</h3></div>
                     <div><h3>Mathematiques, Physique-Chimie</h3></div>
                     <div><h3>Classe: Tle ,3e</h3></div>
@@ -97,7 +122,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="Image/proffemmphysi.jpg" alt="Deimage/Rectangle 6 (3).png" alt="Description de l'image" >
+                    <img src="../Image/math.jpg" alt="Deimage/Rectangle 6 (3).png" alt="Description de l'image" >
                     <div class="descrit"><h3>M. Koffi Charle</h3></div>
                     <div><h3>Mathematiques, Physique-Chimie</h3></div>
                     <div><h3>Classe: Tle ,3e</h3></div>
@@ -112,7 +137,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="Image/profmath.jpg" alt="Description de l'image">
+                    <img src="../Image/profmath.jpg" alt="Description de l'image">
                    <div class="descrit"><h3>M. Koffi Charle</h3></div>
                     <div><h3>Mathematiques, Physique-Chimie</h3></div>
                     <div><h3>Classe: Tle ,3e</h3></div>
